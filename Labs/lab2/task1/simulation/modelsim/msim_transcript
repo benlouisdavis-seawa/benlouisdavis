@@ -1,0 +1,74 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab2-task1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task1 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:15:51 on Jan 24,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1" C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv 
+# -- Compiling module RAM_32x4
+# -- Compiling module RAM_32x4_testbench
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(49): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(50): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(51): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(52): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(53): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(54): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(55): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv(56): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	RAM_32x4_testbench
+# End time: 22:15:51 on Jan 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 8
+# vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task1 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:15:51 on Jan 24,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1" C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv 
+# -- Compiling module DE1_SoC_RAM_32x4
+# -- Compiling module DE1_SoC_RAM_32x4_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_RAM_32x4_testbench
+# End time: 22:15:51 on Jan 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task1 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:15:51 on Jan 24,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1" C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv 
+# -- Compiling module hexadecimal
+# -- Compiling module hexadecimal_testbench
+# 
+# Top level modules:
+# 	hexadecimal_testbench
+# End time: 22:15:51 on Jan 24,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE1_SoC_RAM_32x4_testbench
+# vsim work.DE1_SoC_RAM_32x4_testbench 
+# Start time: 22:15:55 on Jan 24,2024
+# Loading sv_std.std
+# Loading work.DE1_SoC_RAM_32x4_testbench
+# Loading work.DE1_SoC_RAM_32x4
+# Loading work.RAM_32x4
+# Loading work.hexadecimal
+# ** Warning: (vsim-3015) C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv(35): [PCDPC] - Port size (4) does not match connection size (1) for port 'in'. The port definition is at: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv(11).
+#    Time: 0 ps  Iteration: 0  Instance: /DE1_SoC_RAM_32x4_testbench/dut/five File: C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv
+add wave -position end  sim:/DE1_SoC_RAM_32x4_testbench/HEX0
+add wave -position end  sim:/DE1_SoC_RAM_32x4_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_RAM_32x4_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_RAM_32x4_testbench/HEX5
+run -all
+# ** Note: $stop    : C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv(73)
+#    Time: 750 ps  Iteration: 1  Instance: /DE1_SoC_RAM_32x4_testbench
+# Break in Module DE1_SoC_RAM_32x4_testbench at C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv line 73
+# End time: 22:23:52 on Jan 24,2024, Elapsed time: 0:07:57
+# Errors: 0, Warnings: 1

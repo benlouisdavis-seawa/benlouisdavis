@@ -1,0 +1,119 @@
+/*
+	Ben Davis
+	1/23/24
+	EE 371
+	Lab 2, Task 2
+	
+*/
+
+module hex_number (in, out1, out2);
+	
+	input logic [4:0] in;
+	output logic [6:0] out1;
+	output logic [6:0] out2;
+	
+	always_comb begin
+		case(in)
+			
+			5'b0: begin out1 <= 7'b1000000;
+					out2 <= 7'b1111111; end
+					
+			5'b1: begin out1 <= 7'b1111001;
+					out2 <= 7'b1111111; end
+					
+			5'b10: begin out1 <= 7'b0100100;
+						out2 <= 7'b1111111; end
+						
+			5'b11: begin out1 <= 7'b0110000;
+						out2 <= 7'b1111111; end
+						
+			5'b100: begin out1 <= 7'b0011001;
+						out2 <= 7'b1111111; end
+						
+			5'b101: begin out1 <= 7'b0010010;
+						out2 <= 7'b1111111; end
+						
+			5'b110: begin out1 <= 7'b0000001;
+						out2 <= 7'b1111111; end
+						
+			5'b111: begin out1 <= 7'b1111000;
+						out2 <= 7'b1111111; end
+						
+			5'b1000: begin out1 <= 7'b0000000;
+							out2 <= 7'b111111; end
+							
+			5'b1001: begin out1 <= 7'b0111000;
+							out2 <= 7'b1111111; end
+							
+			5'b1010: begin out1 <= 7'b1000000;
+							out2 <= 7'b1111001; end
+							
+			5'b1011: begin out1 <= 7'b1111001;
+							out2 <= 7'b1111001; end
+							
+			5'b1100: begin out1 <= 7'b0100100;
+							out2 <= 7'b1111001; end
+			
+			5'b1101: begin out1 <= 7'b0110000;
+							out2 <= 7'b1111001; end
+							
+			5'b1110: begin out1 <= 7'b0011001;
+							out2 <= 7'b1111001; end
+							
+			5'b1111: begin out1 <= 7'b0010010;
+							out2 <= 7'b1111001; end
+							
+			5'b10000: begin out1 <= 7'b0000010;
+							out2 <= 7'b1111001; end
+							
+			5'b10001: begin out1 <= 1111000;
+							out2 <= 1111001; end
+							
+			5'b10010: begin out1 <= 0000000;
+							out2 <= 1111001; end
+							
+			5'b10011: begin out1 <= 0011000;
+							out2 <= 1111001; end
+							
+			5'b10100: begin out1 <= 1000000;
+							out2 <= 0100100; end
+							
+			5'b10101: begin out1 <= 1111001;
+							out2 <= 0100100; end
+							
+			5'b10110: begin out1 <= 0100100;
+							out2 <= 0100100; end
+							
+			5'b10111: begin out1 <= 0110000;
+							out2 <= 0100100; end
+							
+			5'b11000: begin out1 <= 0011001;
+							out2 <= 0100100; end
+							
+			5'b11001: begin out1 <= 0010010;
+							out2 <= 0100100; end
+							
+			5'b11010: begin out1 <= 0000010;
+							out2 <= 0100100; end
+							
+			5'b11011: begin out1 <= 1111000;
+							out2 <= 0100100; end
+			
+			5'b11100: begin out1 <= 0000000;
+							out2 <= 0100100; end
+							
+			5'b11101: begin out1 <= 0011000;
+							out2 <= 0100100; end
+							
+			5'b11110: begin out1 <= 1000000;
+							out2 <= 0110000; end
+							
+			5'b11111: begin out1 <= 1111001;
+							out2 <= 0110000; end
+							
+			default: begin out1 <= 1111111;
+							out2 <= 1111111; end
+							
+		endcase
+	end
+endmodule

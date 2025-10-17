@@ -1,0 +1,27 @@
+/*
+	Ben Davis
+	1/22/24
+	EE 371
+	Lab 2, Task 1
+	
+	This module implements a 32 word x 4 bit RAM. It has a read
+	and a write enable.
+	
+*/
+
+module RAM_32x4 (
+						input logic clk, wen, [3:0] data_in, [5:0] data_addr,
+						output logic [3:0] data_out
+						);
+	
+	logic [3:0] memory_array [31:0];
+	
+	always_ff @(posedge clk) begin
+		if(wen) begin
+			memory_array[data_addr] <= data_in;
+		end else begin
+			data_out <= memory_array[data_addr];
+		end
+	end
+	
+endmodule

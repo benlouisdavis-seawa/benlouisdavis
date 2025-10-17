@@ -1,0 +1,39 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab6_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE371/Labs/lab6 {C:/Users/bdavi/OneDrive/Desktop/EE371/Labs/lab6/scroller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:51:04 on Mar 08,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bdavi/OneDrive/Desktop/EE371/Labs/lab6" C:/Users/bdavi/OneDrive/Desktop/EE371/Labs/lab6/scroller.sv 
+# -- Compiling module scroller
+# -- Compiling module scroller_testbench
+# 
+# Top level modules:
+# 	scroller_testbench
+# End time: 21:51:04 on Mar 08,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.scroller_testbench
+# vsim work.scroller_testbench 
+# Start time: 21:51:08 on Mar 08,2024
+# Loading sv_std.std
+# Loading work.scroller_testbench
+# Loading work.scroller
+add wave -position end  sim:/scroller_testbench/clk
+add wave -position end  sim:/scroller_testbench/rst
+add wave -position end  sim:/scroller_testbench/out
+run -all
+# ** Note: $stop    : C:/Users/bdavi/OneDrive/Desktop/EE371/Labs/lab6/scroller.sv(83)
+#    Time: 850 ps  Iteration: 1  Instance: /scroller_testbench
+# Break in Module scroller_testbench at C:/Users/bdavi/OneDrive/Desktop/EE371/Labs/lab6/scroller.sv line 83
+# End time: 21:51:46 on Mar 08,2024, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 0

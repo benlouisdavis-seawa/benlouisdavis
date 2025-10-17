@@ -1,0 +1,47 @@
+
+module rush_hour (
+	input logic clk,
+	input logic rst,
+	input logic [3:0] hour,
+	input logic car1,
+	input logic car2,
+	input logic car3,
+	output logic [3:0] rush_start,
+	output logic [3:0] rush_end
+);
+
+	enum {off, start, middle, finish, done} ps, ns;
+
+	always_ff @(posedge clk) begin
+		if(rst) begin
+			ps <= off;
+		end else begin
+			ps <= ns;
+		end
+	end
+	
+	always_comb begin
+		case(ps)
+				off:	begin
+							if(car1 && car2 && car3) ns <= start;
+							else ns <= off;
+						end
+			start:	begin
+							ns <= middle;
+						end
+			middle:	begin
+							if((!car1) && (!car2) && (!car3)) ns <= finish;
+							else ns <= middle;
+						end
+			finish:	begin
+							ns <= done;
+						end
+			done:		begin
+							ns <= done;
+						end
+		endcase
+	end
+	
+	assign rush_start = (ps == start) ? hour : 4'b1000;
+	assign rush_end = (ps == finish) ? hour : 4'b1000;
+endmodule

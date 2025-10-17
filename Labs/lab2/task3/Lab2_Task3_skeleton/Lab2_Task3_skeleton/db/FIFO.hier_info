@@ -1,0 +1,238 @@
+|DE1_SoC_fifo
+CLOCK_50 => CLOCK_50.IN1
+SW[0] => SW[0].IN2
+SW[1] => SW[1].IN2
+SW[2] => SW[2].IN2
+SW[3] => SW[3].IN2
+SW[4] => SW[4].IN2
+SW[5] => SW[5].IN2
+SW[6] => SW[6].IN2
+SW[7] => SW[7].IN2
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+KEY[0] => ps.OUTPUTSELECT
+KEY[0] => ps.OUTPUTSELECT
+KEY[0] => ps1.OUTPUTSELECT
+KEY[0] => ps1.OUTPUTSELECT
+KEY[0] => _.IN1
+KEY[1] => ~NO_FANOUT~
+KEY[2] => ns[0].DATAB
+KEY[2] => Selector0.IN1
+KEY[3] => Selector1.IN1
+KEY[3] => ns1[0].DATAB
+LEDR[0] <= <GND>
+LEDR[1] <= <GND>
+LEDR[2] <= <GND>
+LEDR[3] <= <GND>
+LEDR[4] <= <GND>
+LEDR[5] <= <GND>
+LEDR[6] <= <GND>
+LEDR[7] <= <GND>
+LEDR[8] <= FIFO:fifo_task3.empty
+LEDR[9] <= FIFO:fifo_task3.full
+HEX0[0] <= hexadecimal:zero.out
+HEX0[1] <= hexadecimal:zero.out
+HEX0[2] <= hexadecimal:zero.out
+HEX0[3] <= hexadecimal:zero.out
+HEX0[4] <= hexadecimal:zero.out
+HEX0[5] <= hexadecimal:zero.out
+HEX0[6] <= hexadecimal:zero.out
+HEX1[0] <= hexadecimal:one.out
+HEX1[1] <= hexadecimal:one.out
+HEX1[2] <= hexadecimal:one.out
+HEX1[3] <= hexadecimal:one.out
+HEX1[4] <= hexadecimal:one.out
+HEX1[5] <= hexadecimal:one.out
+HEX1[6] <= hexadecimal:one.out
+HEX4[0] <= hexadecimal:four.out
+HEX4[1] <= hexadecimal:four.out
+HEX4[2] <= hexadecimal:four.out
+HEX4[3] <= hexadecimal:four.out
+HEX4[4] <= hexadecimal:four.out
+HEX4[5] <= hexadecimal:four.out
+HEX4[6] <= hexadecimal:four.out
+HEX5[0] <= hexadecimal:five.out
+HEX5[1] <= hexadecimal:five.out
+HEX5[2] <= hexadecimal:five.out
+HEX5[3] <= hexadecimal:five.out
+HEX5[4] <= hexadecimal:five.out
+HEX5[5] <= hexadecimal:five.out
+HEX5[6] <= hexadecimal:five.out
+
+
+|DE1_SoC_fifo|FIFO:fifo_task3
+clk => clk.IN1
+reset => FIFO_Control:FC.reset
+read => FIFO_Control:FC.read
+write => FIFO_Control:FC.write
+inputBus[0] => inputBus[0].IN1
+inputBus[1] => inputBus[1].IN1
+inputBus[2] => inputBus[2].IN1
+inputBus[3] => inputBus[3].IN1
+inputBus[4] => inputBus[4].IN1
+inputBus[5] => inputBus[5].IN1
+inputBus[6] => inputBus[6].IN1
+inputBus[7] => inputBus[7].IN1
+empty <= FIFO_Control:FC.empty
+full <= FIFO_Control:FC.full
+outputBus[0] <= RAM_16x8:ram2port.data_out
+outputBus[1] <= RAM_16x8:ram2port.data_out
+outputBus[2] <= RAM_16x8:ram2port.data_out
+outputBus[3] <= RAM_16x8:ram2port.data_out
+outputBus[4] <= RAM_16x8:ram2port.data_out
+outputBus[5] <= RAM_16x8:ram2port.data_out
+outputBus[6] <= RAM_16x8:ram2port.data_out
+outputBus[7] <= RAM_16x8:ram2port.data_out
+
+
+|DE1_SoC_fifo|FIFO:fifo_task3|RAM_16x8:ram2port
+clk => memory_array.we_a.CLK
+clk => memory_array.waddr_a[1].CLK
+clk => memory_array.waddr_a[0].CLK
+clk => memory_array.data_a[7].CLK
+clk => memory_array.data_a[6].CLK
+clk => memory_array.data_a[5].CLK
+clk => memory_array.data_a[4].CLK
+clk => memory_array.data_a[3].CLK
+clk => memory_array.data_a[2].CLK
+clk => memory_array.data_a[1].CLK
+clk => memory_array.data_a[0].CLK
+clk => data_out[0]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => data_out[4]~reg0.CLK
+clk => data_out[5]~reg0.CLK
+clk => data_out[6]~reg0.CLK
+clk => data_out[7]~reg0.CLK
+clk => memory_array.CLK0
+wen => memory_array.we_a.DATAIN
+wen => memory_array.WE
+data_in[0] => memory_array.data_a[0].DATAIN
+data_in[0] => memory_array.DATAIN
+data_in[1] => memory_array.data_a[1].DATAIN
+data_in[1] => memory_array.DATAIN1
+data_in[2] => memory_array.data_a[2].DATAIN
+data_in[2] => memory_array.DATAIN2
+data_in[3] => memory_array.data_a[3].DATAIN
+data_in[3] => memory_array.DATAIN3
+data_in[4] => memory_array.data_a[4].DATAIN
+data_in[4] => memory_array.DATAIN4
+data_in[5] => memory_array.data_a[5].DATAIN
+data_in[5] => memory_array.DATAIN5
+data_in[6] => memory_array.data_a[6].DATAIN
+data_in[6] => memory_array.DATAIN6
+data_in[7] => memory_array.data_a[7].DATAIN
+data_in[7] => memory_array.DATAIN7
+read_addr[0] => memory_array.RADDR
+read_addr[1] => memory_array.RADDR1
+read_addr[2] => ~NO_FANOUT~
+read_addr[3] => ~NO_FANOUT~
+write_addr[0] => memory_array.waddr_a[0].DATAIN
+write_addr[0] => memory_array.WADDR
+write_addr[1] => memory_array.waddr_a[1].DATAIN
+write_addr[1] => memory_array.WADDR1
+write_addr[2] => ~NO_FANOUT~
+write_addr[3] => ~NO_FANOUT~
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC_fifo|FIFO:fifo_task3|FIFO_Control:FC
+clk => full~reg0.CLK
+clk => empty~reg0.CLK
+clk => writeAddr[0]~reg0.CLK
+clk => writeAddr[1]~reg0.CLK
+clk => writeAddr[2]~reg0.CLK
+clk => writeAddr[3]~reg0.CLK
+clk => readAddr[0]~reg0.CLK
+clk => readAddr[1]~reg0.CLK
+clk => readAddr[2]~reg0.CLK
+clk => readAddr[3]~reg0.CLK
+reset => readAddr.OUTPUTSELECT
+reset => readAddr.OUTPUTSELECT
+reset => readAddr.OUTPUTSELECT
+reset => readAddr.OUTPUTSELECT
+reset => writeAddr.OUTPUTSELECT
+reset => writeAddr.OUTPUTSELECT
+reset => writeAddr.OUTPUTSELECT
+reset => writeAddr.OUTPUTSELECT
+reset => empty.OUTPUTSELECT
+reset => full.OUTPUTSELECT
+read => always0.IN1
+write => wr_en.IN1
+wr_en <= wr_en.DB_MAX_OUTPUT_PORT_TYPE
+empty <= empty~reg0.DB_MAX_OUTPUT_PORT_TYPE
+full <= full~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readAddr[0] <= readAddr[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readAddr[1] <= readAddr[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readAddr[2] <= readAddr[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+readAddr[3] <= readAddr[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[0] <= writeAddr[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[1] <= writeAddr[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[2] <= writeAddr[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+writeAddr[3] <= writeAddr[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC_fifo|hexadecimal:zero
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC_fifo|hexadecimal:one
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC_fifo|hexadecimal:four
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DE1_SoC_fifo|hexadecimal:five
+in[0] => Decoder0.IN3
+in[1] => Decoder0.IN2
+in[2] => Decoder0.IN1
+in[3] => Decoder0.IN0
+out[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

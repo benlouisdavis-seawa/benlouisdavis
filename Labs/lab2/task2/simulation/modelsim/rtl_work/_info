@@ -1,0 +1,284 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/simulation/modelsim
+vclock_divider
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1706164555
+!i10b 1
+!s100 G4[mOCNQWoL:2damn7HhQ0
+Ifj^0PA_FhmJ?>Rl@d<ZjQ2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 clock_divider_sv_unit
+S1
+R0
+Z5 w1706046762
+Z6 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/clock_divider.sv
+Z7 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/clock_divider.sv
+L0 12
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1706164555.000000
+Z10 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/clock_divider.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/clock_divider.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2}
+Z14 tCvgOpt 0
+vclock_divider_testbench
+R1
+R2
+!i10b 1
+!s100 ^;F08eD1P_e[j<Xj>FOaU0
+INoDj@C?;2>VH?Z1;][UD^0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 24
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vcounter_31
+R1
+R2
+!i10b 1
+!s100 6lBSi6m4dPkK=jO6e<R1R0
+ITb]o[FVcUNUoc^CmD@Ml>2
+R3
+Z15 !s105 counter_31_sv_unit
+S1
+R0
+Z16 w1706138453
+Z17 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/counter_31.sv
+Z18 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/counter_31.sv
+L0 14
+R8
+r1
+!s85 0
+31
+R9
+Z19 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/counter_31.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/counter_31.sv|
+!i113 1
+R12
+R13
+R14
+vcounter_31_testbench
+R1
+R2
+!i10b 1
+!s100 VH>I;7zHe2Ul>jCBJ8]Xh2
+I4=X85Hz_go<6g?mblFcZ@0
+R3
+R15
+S1
+R0
+R16
+R17
+R18
+L0 109
+R8
+r1
+!s85 0
+31
+R9
+R19
+R20
+!i113 1
+R12
+R13
+R14
+vDE1_SoC_task2
+R1
+R2
+!i10b 1
+!s100 :I=oMgSeBK`dPjbKzPjV?1
+IPQWV_`Yi52k@>24NdITE^0
+R3
+Z21 !s105 DE1_SoC_task2_sv_unit
+S1
+R0
+Z22 w1706138797
+Z23 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/DE1_SoC_task2.sv
+Z24 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/DE1_SoC_task2.sv
+Z25 L0 11
+R8
+r1
+!s85 0
+31
+R9
+Z26 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/DE1_SoC_task2.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/DE1_SoC_task2.sv|
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_task2
+vDE1_SoC_task2_testbench
+R1
+R2
+!i10b 1
+!s100 =8^IaIS3XUJf2mekjGGzo0
+ISgeDiM1ef[SAmPD`zTzL`3
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 59
+R8
+r1
+!s85 0
+31
+R9
+R26
+R27
+!i113 1
+R12
+R13
+R14
+n@d@e1_@so@c_task2_testbench
+vhex_number
+R1
+R2
+!i10b 1
+!s100 [0Vj3E^TWIkKo>P?n86Hh3
+Ih372gdL3kNm[D8eKS>nLC3
+R3
+Z28 !s105 hex_number_sv_unit
+S1
+R0
+Z29 w1706164115
+Z30 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hex_number.sv
+Z31 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hex_number.sv
+L0 9
+R8
+r1
+!s85 0
+31
+R9
+Z32 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hex_number.sv|
+Z33 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hex_number.sv|
+!i113 1
+R12
+R13
+R14
+vhex_number_testbench
+R1
+R2
+!i10b 1
+!s100 X]MP^oKZl75[1=n^FTBjK3
+IXn4D2]o6DSoI08T^oW3=:0
+R3
+R28
+S1
+R0
+R29
+R30
+R31
+L0 121
+R8
+r1
+!s85 0
+31
+R9
+R32
+R33
+!i113 1
+R12
+R13
+R14
+vhexadecimal
+R1
+R2
+!i10b 1
+!s100 <C?l[ANE]@h;5a6?=1MiY1
+I=<UB[nJFF<QUlDCh>8==^0
+R3
+Z34 !s105 hexadecimal_sv_unit
+S1
+R0
+Z35 w1706131962
+Z36 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hexadecimal.sv
+Z37 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hexadecimal.sv
+R25
+R8
+r1
+!s85 0
+31
+R9
+Z38 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hexadecimal.sv|
+Z39 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hexadecimal.sv|
+!i113 1
+R12
+R13
+R14
+vhexadecimal_testbench
+R1
+R2
+!i10b 1
+!s100 bK8izJiIA5To^L8m]8:XD0
+IIPgih7leGEh@0@=a@>;<@0
+R3
+R34
+S1
+R0
+R35
+R36
+R37
+L0 56
+R8
+r1
+!s85 0
+31
+R9
+R38
+R39
+!i113 1
+R12
+R13
+R14
+vram32x4
+R2
+!i10b 1
+!s100 HkW5WRDcdSUHzONehe`2G0
+IUSMcDg1ANklH2Ik6ni^QU1
+R3
+R0
+w1706129833
+8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/ram32x4.v
+FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/ram32x4.v
+L0 40
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/ram32x4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/ram32x4.v|
+!i113 1
+o-vlog01compat -work work
+!s92 -vlog01compat -work work {+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2}
+R14

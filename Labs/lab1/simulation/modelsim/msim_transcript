@@ -1,0 +1,71 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lab1_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab1 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/counter_25.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:04:41 on Jan 12,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1" C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/counter_25.sv 
+# -- Compiling module counter_25
+# -- Compiling module counter_25_testbench
+# 
+# Top level modules:
+# 	counter_25_testbench
+# End time: 13:04:42 on Jan 12,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab1 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/lot_counter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:04:42 on Jan 12,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1" C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/lot_counter.sv 
+# -- Compiling module lot_counter
+# -- Compiling module lot_counter_testbench
+# 
+# Top level modules:
+# 	lot_counter_testbench
+# End time: 13:04:42 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab1 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/DE1_SoC_lot.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:04:42 on Jan 12,2024
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1" C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/DE1_SoC_lot.sv 
+# -- Compiling module DE1_SoC_lot
+# -- Compiling module DE1_SoC_lot_testbench
+# 
+# Top level modules:
+# 	DE1_SoC_lot_testbench
+# End time: 13:04:42 on Jan 12,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.DE1_SoC_lot_testbench
+# vsim work.DE1_SoC_lot_testbench 
+# Start time: 13:04:46 on Jan 12,2024
+# Loading sv_std.std
+# Loading work.DE1_SoC_lot_testbench
+# Loading work.DE1_SoC_lot
+# Loading work.lot_counter
+# Loading work.counter_25
+add wave -position end  sim:/DE1_SoC_lot_testbench/clock_period
+add wave -position end  sim:/DE1_SoC_lot_testbench/SW[0]
+add wave -position end  sim:/DE1_SoC_lot_testbench/SW[9]
+add wave -position end  sim:/DE1_SoC_lot_testbench/SW[8]
+add wave -position end  sim:/DE1_SoC_lot_testbench/HEX0
+add wave -position 0  sim:/DE1_SoC_lot_testbench/clk
+add wave -position end  sim:/DE1_SoC_lot_testbench/HEX1
+add wave -position end  sim:/DE1_SoC_lot_testbench/HEX2
+add wave -position end  sim:/DE1_SoC_lot_testbench/HEX3
+add wave -position end  sim:/DE1_SoC_lot_testbench/HEX4
+add wave -position end  sim:/DE1_SoC_lot_testbench/HEX5
+run -all
+# ** Note: $stop    : C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/DE1_SoC_lot.sv(262)
+#    Time: 1350 ps  Iteration: 1  Instance: /DE1_SoC_lot_testbench
+# Break in Module DE1_SoC_lot_testbench at C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab1/DE1_SoC_lot.sv line 262
+# End time: 13:07:28 on Jan 12,2024, Elapsed time: 0:02:42
+# Errors: 0, Warnings: 0

@@ -1,0 +1,91 @@
+/*
+	Ben Davis
+	2/1/24
+	EE 371
+	Lab 3, Task 1
+	
+	This module is solely for the demo for Lab 3, task 1.
+	It takes in two inputs to show four cases of displaying 
+	the linedrawer module. A horizontal line, a vertical line,
+	a line with slope=1, and a shallow sloped line. It then has
+	four outputs of bits 9 and 10 to write in the x0,x1,y0, and y1
+	inputs.
+	
+*/
+
+module lab3_task1_inputter (
+			input logic [1:0] in, //input
+			output logic [10:0] x0, //start x
+			output logic [9:0] y0, //start y
+			output logic [10:0] x1, //end x
+			output logic [9:0] y1 //end y   
+);
+			
+	//for assigning outputs
+	always_comb begin
+		case(in)
+		
+			//slope of 1
+			2'b00: begin
+						x0 <= 10'b0; //0
+						y0 <= 9'b0; //0
+						x1 <= 10'b0011000000; //320
+						y1 <= 9'b011000000; //320
+					 end
+					 
+			//horizontal line
+			2'b01: begin
+						x0 <= 10'b0010000000; //128
+						y0 <= 9'b100000000; //256
+						x1 <= 10'b1000000000; //512
+						y1 <= 9'b100000000; //256
+					 end
+					
+			//vertical line
+			2'b10: begin
+						x0 <= 10'b1000000000; //512
+						y0 <= 9'b001000000; //64
+						x1 <= 10'b1000000000; //512
+						y1 <= 9'b111000000; //384
+					 end
+			
+			//shallow slope
+			2'b11: begin
+						x0 <= 10'b0001000000; //64
+						y0 <= 9'b001000000; //64
+						x1 <= 10'b1100000000; //768
+						y1 <= 9'b010000000; //128
+						
+			default: begin
+							x0 <= 10'b0;
+							y0 <= 9'b0;
+							x1 <= 10'b0;
+							y1 <= 9'b0;
+						end
+		endcase
+	end
+	
+endmodule
+//testbench start
+module lab3_task1_inputter_testbench();
+		
+		//repeat logic variables
+		logic [1:0] in;
+		logic [10:0] x0;
+		logic [9:0] y0;
+		logic [10:0] x1;
+		logic [9:0] y1;
+		
+		//reinstantiate module
+		lab3_task1_inputter dut (.in, .x0, .y0, .x1, .y1);
+		
+		//tests instance of all four different inputs
+		initial begin
+			in <= 00; 
+			in <= 01; #5;
+			in <= 10; #5;
+			in <= 11; #5;
+			
+			$stop;
+		end
+endmodule //testbench

@@ -1,0 +1,85 @@
+/*
+	Ben Davis
+	2/13/24
+	EE 371
+	Lab 4, Task 1
+	
+	This is the controller module for the...
+	
+*/
+
+module lab4task1_FSM (
+					input logic clk,
+					input logic reset,
+					input logic done,
+					output logic start,
+					output logic shr);
+					
+	enum {s1, s2, s3} ps, ns;
+	
+	always_ff @(posedge clk) begin
+		if(reset) begin
+			ps <= s1;
+		end else begin
+			ps <= ns;
+		end
+	end
+	
+	always_comb begin
+		case(ps)
+		
+			s1: begin 
+					if(reset) begin
+						ns <= s1;
+						start <= 1'b0;
+					end else begin
+						ns <= s2;
+						start <= 1'b1;
+					end
+				 end
+			
+			s2: begin 
+					if(done) begin
+						ns <= s3;
+						shr <= 1'b0;
+					end else begin
+						ns <= s2;
+						shr <= 1'b1;
+					end
+				 end
+			
+			s3: begin
+					if(reset) ns <= s1;
+					else ns <= s3;
+				 end
+		endcase
+	end
+endmodule 
+//testbench
+module lab4task1_FSM_tb ();
+	
+	//recall variables
+	logic clk, reset, done, start, shr;
+	
+	//recall module
+	lab4task1_FSM dut (.clk, .reset, .done, .start, .shr);
+	
+	//clock setup
+	parameter clk_pd = 100;
+	initial begin
+		clk <= 0;
+		forever #(clk_pd /2) clk <= ~clk;
+	end //of clock setup
+	
+	initial begin
+		reset <= 1'b1; done <= 1'b0; @(posedge clk);
+		reset <= 1'b0; done <= 1'b0; @(posedge clk);
+		reset <= 1'b0; done <= 1'b0; @(posedge clk);
+		reset <= 1'b0; done <= 1'b0; @(posedge clk);
+		reset <= 1'b0; done <= 1'b0; @(posedge clk);
+		reset <= 1'b0; done <= 1'b0; @(posedge clk);
+		reset <= 1'b0; done <= 1'b1; @(posedge clk);
+		reset <= 1'b0; done <= 1'b1; @(posedge clk);
+		$stop;
+	end
+endmodule //testbench

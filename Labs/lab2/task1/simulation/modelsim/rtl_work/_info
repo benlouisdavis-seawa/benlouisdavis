@@ -1,0 +1,164 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/simulation/modelsim
+vDE1_SoC_RAM_32x4
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1706163351
+!i10b 1
+!s100 eAZdU;lIIHc4Y?HBVGD030
+Ikz9eR7zo@3fSmLY3TNkN@2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 DE1_SoC_RAM_32x4_sv_unit
+S1
+R0
+Z5 w1705983322
+Z6 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv
+Z7 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv
+Z8 L0 11
+Z9 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z10 !s108 1706163351.000000
+Z11 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv|
+Z12 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/DE1_SoC_RAM_32x4.sv|
+!i113 1
+Z13 o-sv -work work
+Z14 !s92 -sv -work work {+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1}
+Z15 tCvgOpt 0
+n@d@e1_@so@c_@r@a@m_32x4
+vDE1_SoC_RAM_32x4_testbench
+R1
+R2
+!i10b 1
+!s100 `_QbOoLbb`WK1>QOmT=CS3
+IdW`N8=c?McM9MIZ[d<hO10
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 44
+R9
+r1
+!s85 0
+31
+R10
+R11
+R12
+!i113 1
+R13
+R14
+R15
+n@d@e1_@so@c_@r@a@m_32x4_testbench
+vhexadecimal
+R1
+R2
+!i10b 1
+!s100 <C?l[ANE]@h;5a6?=1MiY1
+I5_Al=X[T@PkVaRZkZ6Oe91
+R3
+Z16 !s105 hexadecimal_sv_unit
+S1
+R0
+Z17 w1705983123
+Z18 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv
+Z19 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv
+R8
+R9
+r1
+!s85 0
+31
+R10
+Z20 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv|
+Z21 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/hexadecimal.sv|
+!i113 1
+R13
+R14
+R15
+vhexadecimal_testbench
+R1
+R2
+!i10b 1
+!s100 bK8izJiIA5To^L8m]8:XD0
+Im33=QAojMU;Hia:C7R^1E3
+R3
+R16
+S1
+R0
+R17
+R18
+R19
+L0 56
+R9
+r1
+!s85 0
+31
+R10
+R20
+R21
+!i113 1
+R13
+R14
+R15
+vRAM_32x4
+R1
+R2
+!i10b 1
+!s100 DK:Yn>EjWFiUK;O40GCfD2
+I5c=fLM`zEPn56WiKbQhNY0
+R3
+Z22 !s105 RAM_32x4_sv_unit
+S1
+R0
+Z23 w1705970254
+Z24 8C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv
+Z25 FC:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv
+L0 12
+R9
+r1
+!s85 0
+31
+R10
+Z26 !s107 C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv|
+Z27 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1|C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task1/RAM_32x4.sv|
+!i113 1
+R13
+R14
+R15
+n@r@a@m_32x4
+vRAM_32x4_testbench
+R1
+R2
+!i10b 1
+!s100 U[g4T_;:?59WK6<kEbO`S1
+Ic1E2dWR5Van=h3T?eI0[c0
+R3
+R22
+S1
+R0
+R23
+R24
+R25
+L0 30
+R9
+r1
+!s85 0
+31
+R10
+R26
+R27
+!i113 1
+R13
+R14
+R15
+n@r@a@m_32x4_testbench

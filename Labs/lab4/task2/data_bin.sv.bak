@@ -1,0 +1,40 @@
+/*
+	Ben Davis
+	2/15/24
+	EE 371
+	Lab 4, Task 2
+	
+	THis moudle
+	
+*/
+
+module data_bin (
+					input logic clk,
+					input logic [7:0] A,
+					input logic [7:0] ram_out,
+					output logic [4:0] addr,
+					output logic [4:0] L);
+					
+		
+	logic [4:0] addr = 5'b01000;
+	logic [2:0] index = 3'b100;
+	
+	always_ff @(posedge clk) begin
+		/*if(start condition) begin
+			L <= 5'bx;
+			wait for next cycle
+		end */
+		
+		if(A[index] == ram_out[index]) begin
+			if(A == ram_out) begin
+				L <= addr;
+			end
+		end
+		
+		if(A[index] > ram_out[index]) begin
+			addr <= addr + (addr /2);
+		end else if(A[index] < ram_out[index]) begin
+			addr <= addr - (addr /2);
+		end
+	end
+	

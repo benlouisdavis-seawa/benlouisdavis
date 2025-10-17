@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/ram32x4.v}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/DE1_SoC_task2.sv}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hexadecimal.sv}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/clock_divider.sv}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/hex_number.sv}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab2/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab2/task2/counter_31.sv}
+

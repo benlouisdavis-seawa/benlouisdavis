@@ -1,0 +1,13 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab4/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab4/task2/ram32x8.v}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab4/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab4/task2/data_bin.sv}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab4/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab4/task2/fsm_bin.sv}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab4/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab4/task2/binary_fpga.sv}
+vlog -sv -work work +incdir+C:/Users/bdavi/OneDrive/Desktop/EE\ 371/Labs/lab4/task2 {C:/Users/bdavi/OneDrive/Desktop/EE 371/Labs/lab4/task2/hexadecimal.sv}
+

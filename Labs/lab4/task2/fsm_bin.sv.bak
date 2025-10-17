@@ -1,0 +1,51 @@
+/*
+	Ben Davis
+	2/15/24
+	EE 371
+	Lab 4, Task 2
+	
+	This moduel
+	
+*/
+
+module fsm_bin (
+				input logic clk,
+				input logic reset,
+				input logic start,
+				input logic done,
+				input logic [7:0] A,
+				output logic go,
+				output logic finish,
+				output logic [7:0] data);
+				
+				
+	enum {s1, s2, s3} ps, ns;
+	
+	always_ff @(posedge clk) begin
+		if(reset) begin
+			ps <= s1;
+		end else begin
+			ps <= ns;
+		end
+	end
+	
+	always_comb begin
+		case(ps)
+		
+			s1: 	if(start) ns <= s2;
+					else ns <= s1;
+					
+			s2:	if(done) ns <= s3;
+					else ns <= s2;
+					
+			s3:	if(start) ns <= s1;
+					else ns <= s3;
+					
+		endcase
+	end
+		
+	assign go = (ps == s2);
+	assign finish = (ps == s3);
+	assign data = A;
+endmodule
+//testbench
