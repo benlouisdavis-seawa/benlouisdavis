@@ -1,11 +1,6 @@
 /*
   i2c.ino
-
-  Ben Davis
-  2120919
-  06/06/2025
-  Lab 5
-
+  
   Setup()
   Sets up the arduino board for i2c
   connection.

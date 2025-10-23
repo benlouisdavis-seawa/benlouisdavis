@@ -1,9 +1,4 @@
 /*
-  Ben Davis
-  2120919
-  06/06/2025
-  Lab 5
-
   The I2C files for this project intializes
   TIVA's I2C 7 and Port D as the master in the 
   I2C relationship. Contains the initalize

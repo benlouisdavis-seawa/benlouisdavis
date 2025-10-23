@@ -1,9 +1,4 @@
 /*
-  Ben Davis
-  2120919
-  06/06/2025
-  Lab 5
-
   I2C communication from the TIVA side.
   Gives output readings to the arduino board.
 */

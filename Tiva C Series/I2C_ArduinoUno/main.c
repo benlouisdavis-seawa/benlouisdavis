@@ -1,9 +1,4 @@
 /*
-  Ben Davis
-  2120919
-  06/03/2025
-  Lab 5
-
   Implements the i2c functions
   to toggle two leds connected to the
   arduino board. Initializes the on
